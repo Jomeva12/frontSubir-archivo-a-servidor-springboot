@@ -1,0 +1,46 @@
+#mostrarInputCrearLista {
+    width: 1.5cm;
+    height: 1.5cm;
+    padding: 0;
+    border: none; 
+    background-color: brown;
+  }
+  #mostrarInputCrearCanciones {
+    width: 1.5cm;
+    height: 1.5cm;
+    padding: 0;
+    border: none; 
+    background-color: rgb(237, 6, 121);
+  }
+  #inputContainer{
+    display: none;
+    align-items: center;
+  }
+  #inputContainerCancion{
+    display: none;
+    align-items: center;
+ 
+  }
+ 
+  .inputCancion{
+    margin-bottom: 10px;
+  }
+  .custom-modal {
+    width: 140%; /* Ajusta el valor según tus necesidades */
+    margin: auto; /* Centra el modal horizontalmente */
+    background-color: blue;
+}
+
+.existeItem{
+  
+  display: none;
+}
+.filaTachada{
+  text-decoration: line-through;
+  color: red;
+}
+
+
+
+
+
