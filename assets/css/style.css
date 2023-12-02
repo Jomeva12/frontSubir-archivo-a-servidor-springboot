@@ -21,3 +21,33 @@
 .my-float{
 	margin-top:16px;
 }
+
+body.dark-mode {
+	background-color: #1a1a1a;
+	color: #ffffff;
+}
+
+body.dark-mode nav {
+	background-color: #333333;
+}
+
+body.dark-mode nav .navbar-brand {
+	color: #28a745; /* Color del texto del logotipo */
+}
+
+body.dark-mode .card {
+	background-color: #333333;
+	border-color: #555;
+	color: #ffffff;
+}
+
+body.dark-mode .card-header {
+	background-color: #555;
+	border-color: #555;
+	color: #ffffff;
+}
+
+body.dark-mode .form-control {
+	background-color: #444;
+	color: #ffffff;
+}
