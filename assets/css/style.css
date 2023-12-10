@@ -30,6 +30,11 @@ body.dark-mode {
 body.dark-mode nav {
 	background-color: #333333;
 }
+#tabla thead{
+	background-color: #333333;
+	border-color: #555;
+	color: #ffffff;
+}
 
 body.dark-mode nav .navbar-brand {
 	color: #28a745; /* Color del texto del logotipo */
@@ -40,7 +45,11 @@ body.dark-mode .card {
 	border-color: #555;
 	color: #ffffff;
 }
-
+.card {
+	background-color: #333333;
+	border-color: #555;
+	color: #ffffff;
+}
 body.dark-mode .card-header {
 	background-color: #555;
 	border-color: #555;
@@ -51,3 +60,11 @@ body.dark-mode .form-control {
 	background-color: #444;
 	color: #ffffff;
 }
+.dark-mode{
+	background-color: #333333;
+	border-color: #555;
+	color: #ffffff;
+}
+table#tabla th.option {
+	width: 200px;
+  }
