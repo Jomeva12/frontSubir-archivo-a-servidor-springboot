@@ -13,6 +13,7 @@ $(function () {
     EditFromTable()
     closeModal()
     EditTR()
+    descargarExcel() 
 })
 // Verifica si hay un token JWT en el almacenamiento local
 const token = localStorage.getItem('tokenJWT');
@@ -379,5 +380,25 @@ function closeModal() {
         $("#modalDetalleLista").modal('hide');
         $("#exampleModalLong").modal('hide');
       
+    });
+    btn_excel
+}
+function descargarExcel() {
+    $("#btn_excel").on('click', function () {
+        fetch('http://localhost:8080/datatransaction/excel')
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'excel_file.xlsx'; 
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            })
+            .catch(error => {
+                console.error('Error en la solicitud:', error);
+               
+            });
     });
 }
